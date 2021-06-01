@@ -47,7 +47,7 @@ app.get('/logar/:usuario/:senha', function(req,res){
   let usuario = req.params.usuario;
   let senha = req.params.senha;
 
-  if (usuario == "Felipe" && senha =="1234"){
+  if (usuario == "felipe" && senha =="1234" || usuario == "karen" && senha =="123"){
     res.end("Seja bem-vindo " + usuario );
   }else {
     res.end("Credenciais inválidas!");
