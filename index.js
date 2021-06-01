@@ -25,12 +25,12 @@ let db2 = [
   { '3': { Nome: 'Karen', Senha: '1220'}}
 ]
 let db3Prod = [
-  { 'Calabresa': { Nome: 'Calabresa', Desc: 'Uma pizza simples, mas que conquistou uma legião de fãs em todo o mundo. Está presente em mais de 30% dos pedidos.'}},
-  { 'Portuguesa': { Nome: 'Portuguesa', Desc: 'Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor a segunda pizza mais queridinha dos brasileiros.'}},
-  { 'Marguerita': { Nome: 'Marguerita', Desc: 'Sabor ícone da Itália que leva apenas molho, muçarela, tomate e manjericão. É uma ótima opção para quem não come carne.'}},
-  { 'Frango': { Nome: 'Frango com catupiry', Desc: 'A mistura de proteína e cremosidade que deu muito certo.'}},
-  { 'Muçarela': { Nome: 'Muçarela', Desc: 'Simples e perfeita como tem que ser. A número 1 entre os paulistanos.'}},
-  { 'Napolitana': { Nome: 'Napolitana', Desc: 'Um sabor genuinamente italiano que não pode faltar na sua pizzaria.'}}
+  { '1': { Nome: 'Calabresa', Desc: 'Uma pizza simples, mas que conquistou uma legião de fãs em todo o mundo. Está presente em mais de 30% dos pedidos.'}},
+  { '2': { Nome: 'Portuguesa', Desc: 'Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor a segunda pizza mais queridinha dos brasileiros.'}},
+  { '3': { Nome: 'Marguerita', Desc: 'Sabor ícone da Itália que leva apenas molho, muçarela, tomate e manjericão. É uma ótima opção para quem não come carne.'}},
+  { '4': { Nome: 'Frango com catupiry', Desc: 'A mistura de proteína e cremosidade que deu muito certo.'}},
+  { '5': { Nome: 'Muçarela', Desc: 'Simples e perfeita como tem que ser. A número 1 entre os paulistanos.'}},
+  { '6': { Nome: 'Napolitana', Desc: 'Um sabor genuinamente italiano que não pode faltar na sua pizzaria.'}}
 ]
 app.get('/prod', function(req,res){
  return res.json(db3Prod)
