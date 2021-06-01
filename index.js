@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser')
 
+const PORT = process.env.PORT || 8877;
+
 const app = express();
 
 app.use(morgan('dev'))
@@ -75,6 +77,6 @@ return res.send(newDB)
 
 
 
-app.listen(8081, function(){
-  console.log("Servidor rodando na url http://localhost:8081");
+app.listen(PORT, function(){
+  console.log("Servidor rodando na url http://localhost:8877");
 });
