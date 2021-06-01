@@ -43,7 +43,7 @@ app.get('/', function(req,res){
  return res.json(db)
 })
 
-app.post('/logar/:usuario/:senha', function(req,res){
+app.get('/logar/:usuario/:senha', function(req,res){
   let usuario = req.params.usuario;
   let senha = req.params.senha;
 
