@@ -65,11 +65,11 @@ const body = req.body
 
 })
 
-app.get("/:id", function(req,res){
-  const id = req.params.id
+app.get("/:Nome", function(req,res){
+  const id = req.params.Nome
 
 let newDB = db3Prod.filter(item => {
-  if(item[id])
+  if(item[Nome])
     return item
 })
 return res.send(newDB)
