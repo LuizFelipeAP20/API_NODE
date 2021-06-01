@@ -22,6 +22,17 @@ let db2 = [
   { '2': { Nome: 'Maria', Senha: '220'}},
   { '3': { Nome: 'Karen', Senha: '1220'}}
 ]
+let db3Prod = [
+  { '1': { Nome: 'Calabresa', Desc: 'Uma pizza simples, mas que conquistou uma legião de fãs em todo o mundo. Está presente em mais de 30% dos pedidos.'}},
+  { '2': { Nome: 'Portuguesa', Desc: 'Ovos, cebola, azeitona, ervilha, queijo e presunto dão sabor a segunda pizza mais queridinha dos brasileiros.'}},
+  { '3': { Nome: 'Marguerita', Desc: 'Sabor ícone da Itália que leva apenas molho, muçarela, tomate e manjericão. É uma ótima opção para quem não come carne.'}},
+  { '4': { Nome: 'Frango com catupiry', Desc: 'A mistura de proteína e cremosidade que deu muito certo.'}},
+  { '5': { Nome: 'Muçarela', Desc: 'Simples e perfeita como tem que ser. A número 1 entre os paulistanos.'}},
+  { '6': { Nome: 'Napolitana', Desc: 'Um sabor genuinamente italiano que não pode faltar na sua pizzaria.'}}
+]
+app.get('/prod', function(req,res){
+ return res.json(db3Prod)
+})
 app.get('/users', function(req,res){
  return res.json(db2)
 })
@@ -55,7 +66,7 @@ const body = req.body
 app.get("/:id", function(req,res){
   const id = req.params.id
 
-let newDB = db2.filter(item => {
+let newDB = db3Prod.filter(item => {
   if(item[id])
     return item
 })
